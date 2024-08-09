@@ -1,0 +1,19 @@
+<!-- ============================
+Template: 'header.component.html
+================================= -->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+  <span>ImageIn - WebP Converter</span>
+  <span class="spacer"></span>
+  <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+  <button mat-raised-button color="accent" *ngIf="currentRoute === '/app'">
+    Home
+  </button>
+  </a>
+  <a routerLink="/app" routerLinkActive="active" ariaCurrentWhenActive="page">
+  <button mat-raised-button color="accent" *ngIf="currentRoute === '/'">
+    Convert To WebP
+  </button>
+  </a>
+  </mat-toolbar-row>
+</mat-toolbar>
