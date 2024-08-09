@@ -1,0 +1,33 @@
+<!-- ============================
+Template: 'main.component.html
+================================= -->
+
+<h2>Convert to WebP</h2>
+<form>
+  <figure *ngIf="imagePreview === '' || imagePreview === null || form.get('image').invalid">
+    <img src="/assets/img/bg.png" alt="image">
+  </figure>
+  <figure *ngIf="imagePreview !== '' && imagePreview && form.get('image').valid" id="img-preview">
+    <img [src]="imagePreview" [alt]="form.value.title" *ngIf="form.get('image').valid">
+    <figcaption *ngIf="form.get('image').valid">{{ imageName }}</figcaption>
+  </figure>
+  <mat-error *ngIf="imagePreview !== '' && imagePreview && form.get('image').invalid">Please upload an image of
+    type
+    .jpg or .png
+  </mat-error>
+  <input type="file" #inputImage (change)="onUploadImage($event)">
+  <p class="step-text">Step 1: Upload Image</p>
+  <button mat-raised-button color="accent" (click)="inputImage.click()" id="upload-img-button" type="button">Upload
+    Image
+  </button>
+  <p class="step-text">Step 2: Convert Image to WebP</p>
+  <button mat-raised-button color="accent" (click)="onConvertImage()" [disabled]="form.invalid || !canConvertFlag"
+    id="convert-img-button">Convert
+    Image To WebP</button>
+  <p class="step-text">Step 3: Download Image</p>
+  <button mat-raised-button color="accent" (click)="onDownloadImage()" [disabled]="!isConvertedFlag"
+    id="download-img-button" type="button">Download
+    Image
+  </button>
+</form>
+

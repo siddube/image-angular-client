@@ -1,0 +1,30 @@
+/* ================================
+Stylesheet: 'main.component.css
+=================================== */
+
+:host {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem;
+  text-align: center;
+}
+
+img {
+  width: auto;
+  max-width: 300px;
+}
+
+input[type="file"] {
+  visibility: hidden;
+}
+
+.step-text {
+  margin: 10px 0 0;
+}
+
+#upload-img-button,
+#convert-img-button,
+#download-img-button {
+  margin: 10px auto;
+  width: 40%;
+}
