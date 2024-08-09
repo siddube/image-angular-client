@@ -1,3 +1,8 @@
+/* ================================
+Global Stylesheet
+Stylesheet: 'styles.css
+=================================== */
+
 html,
 body {
   height: 100%;
@@ -11,4 +16,9 @@ body {
 a {
   color: white;
   text-decoration: none;
+}
+
+.mat-grid-tile-content {
+  flex-direction: column;
+  justify-content: flex-start !important;
 }

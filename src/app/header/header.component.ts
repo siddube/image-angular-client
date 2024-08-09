@@ -5,8 +5,8 @@ Template: 'header.component.html
 Style: 'header.component.css
 ============================================= */
 
-// import Component, OnInit and Router from Angular
-import { Component, OnInit } from '@angular/core';
+// import Component and Router from Angular Core & Router
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 // component decorator

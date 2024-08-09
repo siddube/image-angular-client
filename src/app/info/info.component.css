@@ -1,0 +1,28 @@
+/* ================================
+Stylesheet: 'info.component.css
+=================================== */
+
+:host {
+  display: block;
+  margin: 4rem;
+  text-align: center;
+  height: 80vh;
+}
+
+img {
+  width: auto;
+  max-width: 300px;
+}
+
+.text-left-align {
+  text-align: left;
+}
+
+#title-text {
+  margin: 2rem 0 0;
+}
+
+#cta-button {
+  margin: 2rem 0 0;
+  width: 100%;
+}

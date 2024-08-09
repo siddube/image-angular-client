@@ -1,0 +1,92 @@
+<!-- ============================
+Template: 'info.component.html
+================================= -->
+
+<mat-grid-list cols="2" rowHeight="40em">
+  <mat-grid-tile colspan="1" rowspan="1">
+    <div id="image-preview-container">
+        <img src="/assets/img/bg.png" alt="image">
+    </div>
+    <h1>ImageIn - WebP Converter</h1>
+    <p>Convert .png and .jpg to .webp file format</p>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="1">
+    <h2 id="title-text">Why WebP Images?</h2>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> What is a WebP file? </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="text-left-align">Google introduced the WebP format to help speed up loading times on the internet. WebP
+          enables websites to showcase
+          high-quality images while maintaining smaller file sizes compared to traditional formats like PNG and JPEG.
+        </p>
+        <p class="text-left-align">
+          Users have the option to save WebP files with either lossless or lossy compression. This means images can be
+          compressed
+          without losing data or by losing only some non-essential details. According to Google's developers, lossless WebP
+          images
+          can be up to 26% smaller than PNGs.
+        </p>
+        <p class="text-left-align">
+          You can easily identify a WebP image by its .WEBP extension.
+        </p>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> What’s the difference between WebP and JPEG files? </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="text-left-align">Both file formats compress images to facilitate sharing and storage. However, WebP files
+          are typically much smaller than
+          traditional JPEGs. According to Google's developers, a WebP image with lossy compression can be 25% to 34% smaller
+          than
+          a similar JPEG file.
+        </p>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> Does WebP work on all browsers? </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="text-left-align">After years of progress and refinement, most web browsers now support the WebP format.
+          However, some browsers, such as
+          Internet Explorer, might still have difficulty handling WebP files. It's always a good idea to check Google's most
+          recent compatibility list.
+        </p>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> Is WebP an open-source file format? </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="text-left-align">WebP is an open-source format, allowing anyone to contribute to its development and
+          improvements. Since its launch in
+          2010, Google's developers have actively encouraged users to provide feedback and suggestions.
+        </p>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> Does a WebP image have a maximum size? </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="text-left-align">WebP images have a maximum size of 16,383 x 16,383 pixels. It's important to keep this in
+          mind when adding WebP images
+          to a website or other platforms.
+        </p>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> Are WebP images raster or vector files? </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="text-left-align">WebP images fall under the category of raster files. Raster files are one of the two
+          primary types of image files, the
+          other being vector files. The key distinction between them is that raster files are made up of individual pixels,
+          while
+          vector graphics are composed of mathematical equations and paths.
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-grid-tile>
+</mat-grid-list>
+<a routerLink="/app" routerLinkActive="active" ariaCurrentWhenActive="page">
+<button mat-raised-button color="accent" id="cta-button">
+    Convert To WebP
+</button>
+</a>
