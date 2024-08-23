@@ -22,3 +22,8 @@ a {
   flex-direction: column;
   justify-content: flex-start !important;
 }
+
+.mat-error {
+  display: block;
+  text-align: center;
+}
